@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Tên ứng dụng -->
+    <string name="app_name">MyApp</string>
+
+    <!-- Đăng nhập -->
+    <string name="login_title">Đăng Nhập</string>
+    <string name="username_hint">Email hoặc số điện thoại</string>
+    <string name="password_hint">Mật khẩu</string>
+    <string name="login_button">Đăng nhập</string>
+    <string name="or_text">Hoặc</string>
+    <string name="register_button">Đăng kí tài khoản</string>
+
+    <!-- Sign up -->
+    <string name="signup_form_title">Đăng Kí Tài Khoản</string>
+    <string name="confirm_password_hint">Nhập lại Password</string>
+    <string name="signup_button_text">Đăng ký</string>
+    <string name="login_prompt">Đã có tài khoản? chọn Đăng nhập</string>
+    <string name="relogin_button_text">Quay lại Đăng nhập</string>
+
+    <!-- LoginActivity -->
+    <string name="title_activity_login_huy">LoginActivityHuy</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">Welcome!</string>
+    <string name="invalid_username">User name không đúng</string>
+    <string name="invalid_password">Mật khẩu phải > 5 ký tự</string>
+    <string name="login_failed">Đăng nhập không thành công</string>
+    <string name="not_account_text">Bạn chưa có tài khoản? <b>Hãy tạo một tài khoản</b></string>
+
+    <!-- FPT -->
+    <string name="fpt_logo_description">FPT Logo</string>
+    <string name="welcome_message">Bạn đã đăng nhập thành công!</string>
+
+</resources>

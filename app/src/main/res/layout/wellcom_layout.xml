@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wellcome_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_16"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:id="@+id/fpt_logo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_120"
+        android:src="@drawable/fpt_logo"
+        android:contentDescription="@string/fpt_logo_description"
+        />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/welcome_message"
+        android:layout_below="@+id/fpt_logo3"
+        android:textSize="@dimen/text_size24"
+        android:textStyle="bold"
+        android:gravity="center"/>
+</RelativeLayout>

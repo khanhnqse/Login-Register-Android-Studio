@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_16"
+    android:paddingTop="@dimen/padding_16"
+    android:paddingRight="@dimen/padding_16"
+    android:paddingBottom="@dimen/padding_16"
+    android:padding="@dimen/padding_16"
+    android:background="@color/background_color"
+    >
+
+    <ImageView
+        android:id="@+id/fpt_logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_20"
+        android:src="@drawable/fpt_logo"
+        android:contentDescription="@string/fpt_logo_description"
+        />
+
+    <TextView
+        android:id="@+id/SignUpForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_120"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/signup_form_title"
+        android:layout_below="@+id/fpt_logo2"
+        android:textSize="@dimen/text_size24"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/id_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/SignUpForm"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_200"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:hint="@string/username_hint"
+        android:inputType="textEmailAddress"
+        android:minHeight="@dimen/margin_48"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/st_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_sign"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:hint="@string/password_hint"
+        android:imeActionLabel="st_Passcore"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/margin_48"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/end_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/st_password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:hint="@string/confirm_password_hint"
+        android:imeActionLabel="end_Passcore"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/margin_48"
+        android:selectAllOnFocus="true" />
+
+    <Button
+        android:id="@+id/b_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_64"
+        android:text="Đăng ký"
+        android:layout_below="@+id/end_password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_16"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/Yes_Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b_login"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="Đã có tài khoản? chọn Đăng nhập"
+        android:layout_centerHorizontal="true"/>
+
+
+    <!-- Layout chứa đường kẻ và chữ "Or" -->
+    <LinearLayout
+        android:id="@+id/or_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Yes_Account"
+        android:layout_marginTop="@dimen/margin_16"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Đường kẻ bên trái -->
+        <View
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="@dimen/height_1"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/margin_16"
+            android:background="@color/black" />
+
+        <!-- TextView "Or" -->
+        <TextView
+            android:id="@+id/Or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:text="@string/or_text"
+            android:textSize="@dimen/text_size20"
+            android:textStyle="bold" />
+
+        <!-- Đường kẻ bên phải -->
+        <View
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="@dimen/height_1"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/re_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_64"
+        android:enabled="true"
+        android:text="@string/relogin_button_text"
+        android:layout_below="@+id/or_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_16"/>
+
+
+</RelativeLayout>
